@@ -5,7 +5,9 @@
 
 #### 安装教程
 
-
+1. git clone https://gitee.com/seaworld/qingjian-vocabulary-bank.git
+2. 在青简输入法软件的设置上导入：
+![输入图片说明](picqingjian-settings.exe_20261024_011136.png)
 
 #### 词库制作技能包使用说明
 
