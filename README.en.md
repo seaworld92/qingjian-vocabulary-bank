@@ -75,11 +75,12 @@ Feature requests are welcome as issues.
 
 | Date | Change |
 |---|---|
+| 2026-10-24 | Released under the MIT License; `LICENSE` added at the repository root |
 | 2026-10-24 | Added the mathematics dictionary (10,257 entries); skill upgraded to 1.0.4 with mathematics-specific pronunciation rules |
 | 2026-10-24 | Added the materials-science dictionary (14,976 entries); skill upgraded to 1.0.3 with case-library support |
 | 2026-10-23 | Repository created with the mechanical engineering dictionary (30,314 entries) |
 
 ## License
 
-The dictionaries may be used freely in personal and commercial IME setups; credit the source when redistributing.
-Domain terminology collected here is public knowledge in its respective field and carries no copyright claim.
+Released under the **MIT License** — see [LICENSE](LICENSE). Free to use in personal and commercial IME setups, and free to modify and redistribute, provided the copyright and permission notice is retained.
+Domain terminology collected here is public knowledge in its respective field and carries no separate copyright claim.
