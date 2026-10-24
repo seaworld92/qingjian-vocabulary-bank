@@ -13,6 +13,7 @@ or mirror its conventions, word-formation patterns and documentation layout.
 | 机械行业专业术语词库_3万条 (Mechanical engineering) | 2026-10-24-01 | 30,314 | Fasteners, keys, gears, bearings, machining (turning, milling, planing, grinding), heat treatment, welding, casting, materials, metrology and inspection |
 | 材料学专业术语词库_1.5万条 (Materials science) | 2026-10-24-01 | 14,976 | Crystal structure and phase transformation, defects and diffusion, mechanical properties and failure, characterisation, metals / ceramics and glass / polymers / composites, batteries and semiconductors, corrosion protection |
 | 数学专业术语词库_1万条 (Mathematics) | 2026-10-24-01 | 10,257 | Primary school through undergraduate: arithmetic and numbers, plane and solid geometry, algebraic expressions and equations, functions and trigonometry, sequences and limits, derivatives and integrals, series, linear algebra, probability and statistics, complex analysis and differential equations, real analysis and functional analysis, abstract algebra, topology, number theory, numerical analysis, operations research and graph theory, mathematical logic and set theory |
+| 物理学专业术语词库_1.5万条 (Physics) | 2026-10-24-04 | 15,013 | Mechanics and vibration, thermodynamics and statistical physics, electromagnetism, optics, relativity and quantum physics, atomic/molecular and condensed matter, particle and nuclear physics, astrophysics and cosmology, experiments and instruments; plus modern frontiers such as quantum information, topological matter and gravitational waves |
 
 File naming: `<dictionary>_<version>.tsv` and `<dictionary>_<version>.dict.yaml`, for example
 `数学专业术语词库_1万条_2026-10-24-01.tsv`. The version is a date plus a same-day serial, formatted
@@ -84,6 +85,7 @@ Feature requests are welcome as issues.
 
 | Date | Change |
 |---|---|
+| 2026-10-24 | Added the physics dictionary (15,013 entries) covering mechanics, thermodynamics, electromagnetism, optics, relativity and quantum physics, atomic/molecular and condensed matter, particle/nuclear physics, astrophysics/cosmology and experiments/instruments, plus modern frontiers (quantum information, topological matter, gravitational waves) |
 | 2026-10-24 | Version numbers added to dictionary file names (date + same-day serial, e.g. `2026-10-24-01`); all three dictionaries published as their first version |
 | 2026-10-24 | Mechanical and materials dictionaries re-voiced to standard readings (874 entries: 弹 tán, 泊松 bó, 着色 zhuó) |
 | 2026-10-24 | Released under the MIT License; `LICENSE` added at the repository root |
