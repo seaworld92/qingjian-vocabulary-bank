@@ -75,6 +75,7 @@ Feature requests are welcome as issues.
 
 | Date | Change |
 |---|---|
+| 2026-10-24 | Mechanical and materials dictionaries re-voiced to standard readings (874 entries: 弹 tán, 泊松 bó, 着色 zhuó) |
 | 2026-10-24 | Released under the MIT License; `LICENSE` added at the repository root |
 | 2026-10-24 | Added the mathematics dictionary (10,257 entries); skill upgraded to 1.0.4 with mathematics-specific pronunciation rules |
 | 2026-10-24 | Added the materials-science dictionary (14,976 entries); skill upgraded to 1.0.3 with case-library support |
