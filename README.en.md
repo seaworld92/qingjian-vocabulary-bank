@@ -12,8 +12,9 @@ or mirror its conventions, word-formation patterns and documentation layout.
 |---|---|---|---|
 | 机械行业专业术语词库_3万条 (Mechanical engineering) | 30,314 | `.tsv` + `.dict.yaml` | Fasteners, keys, gears, bearings, machining (turning, milling, planing, grinding), heat treatment, welding, casting, materials, metrology and inspection |
 | 材料学专业术语词库_1.5万条 (Materials science) | 14,976 | `.tsv` + `.dict.yaml` | Crystal structure and phase transformation, defects and diffusion, mechanical properties and failure, characterisation, metals / ceramics and glass / polymers / composites, batteries and semiconductors, corrosion protection |
+| 数学专业术语词库_1万条 (Mathematics) | 10,257 | `.tsv` + `.dict.yaml` | Primary school through undergraduate: arithmetic and numbers, plane and solid geometry, algebraic expressions and equations, functions and trigonometry, sequences and limits, derivatives and integrals, series, linear algebra, probability and statistics, complex analysis and differential equations, real analysis and functional analysis, abstract algebra, topology, number theory, numerical analysis, operations research and graph theory, mathematical logic and set theory |
 
-Import either file — `.tsv` is the generic text format, `.dict.yaml` is the Rime format.
+Every dictionary ships both files — import either one: `.tsv` is the generic text format, `.dict.yaml` is the Rime format.
 
 ## 2. Installation
 
@@ -33,7 +34,7 @@ Import either file — `.tsv` is the generic text format, `.dict.yaml` is the Ri
 
 - Three columns per line, tab-separated: `word ⟶ pinyin ⟶ weight`
 - Pinyin syllables are **space-separated**, without tone marks; `ü` is always written as `v` (`铝` → `lv`, `率` → `lv`)
-- Weights span 800–10038 across five tiers: 7600 / 5200 / 3200 / 1700 / 800. A word always lands in the same tier, so weights are comparable across dictionaries
+- Weights span 800–10039 across five tiers: 7600 / 5200 / 3200 / 1700 / 800. A word always lands in the same tier, so weights are comparable across dictionaries (the mathematics dictionary uses only the four tiers above 1700)
 - UTF-8 without BOM, LF line endings
 
 ⚠️ **The mechanical dictionary's `.dict.yaml` uses an older convention**: its code column is written as
@@ -57,6 +58,8 @@ and validates everything against the official Qingjian rules.
 
 Since **1.0.3**, the skill knows about this case library — the agent checks for a comparable dictionary first,
 which saves guessing the conventions and building a word list from scratch.
+**1.0.4** adds mathematics-specific polyphone rules (奇函数 / 行列式 / 重积分 families plus 着色 zhuo se)
+and makes the polyphone examples in the generated documentation project-configurable.
 
 ## 5. Contributing
 
@@ -68,6 +71,7 @@ Feature requests are welcome as issues.
 
 | Date | Change |
 |---|---|
+| 2026-10-24 | Added the mathematics dictionary (10,257 entries); skill upgraded to 1.0.4 with mathematics-specific pronunciation rules |
 | 2026-10-24 | Added the materials-science dictionary (14,976 entries); skill upgraded to 1.0.3 with case-library support |
 | 2026-10-23 | Repository created with the mechanical engineering dictionary (30,314 entries) |
 
