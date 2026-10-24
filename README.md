@@ -17,10 +17,13 @@
 
 ## 二、安装
 
-1. 克隆仓库：
+1. 克隆仓库（Gitee 主仓，GitHub 为同步镜像，两边内容一致）：
 
    ```bash
    git clone https://gitee.com/seaworld/qingjian-vocabulary-bank.git
+
+   # 或从 GitHub 镜像克隆
+   git clone https://github.com/seaworld92/qingjian-vocabulary-bank.git
    ```
 
 2. 打开青简输入法 → 设置 → 词库 → 导入，选择对应的 `.tsv` 文件：

@@ -18,10 +18,13 @@ Every dictionary ships both files — import either one: `.tsv` is the generic t
 
 ## 2. Installation
 
-1. Clone the repository:
+1. Clone the repository (Gitee is the primary repo; GitHub is a synced mirror with identical content):
 
    ```bash
    git clone https://gitee.com/seaworld/qingjian-vocabulary-bank.git
+
+   # or clone from the GitHub mirror
+   git clone https://github.com/seaworld92/qingjian-vocabulary-bank.git
    ```
 
 2. In Qingjian: Settings → Dictionaries → Import, then pick the `.tsv` file:
