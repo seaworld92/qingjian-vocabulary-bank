@@ -8,13 +8,20 @@ or mirror its conventions, word-formation patterns and documentation layout.
 
 ## 1. Available dictionaries
 
-| Dictionary | Entries | Files | Coverage |
+| Dictionary | Version | Entries | Coverage |
 |---|---|---|---|
-| 机械行业专业术语词库_3万条 (Mechanical engineering) | 30,314 | `.tsv` + `.dict.yaml` | Fasteners, keys, gears, bearings, machining (turning, milling, planing, grinding), heat treatment, welding, casting, materials, metrology and inspection |
-| 材料学专业术语词库_1.5万条 (Materials science) | 14,976 | `.tsv` + `.dict.yaml` | Crystal structure and phase transformation, defects and diffusion, mechanical properties and failure, characterisation, metals / ceramics and glass / polymers / composites, batteries and semiconductors, corrosion protection |
-| 数学专业术语词库_1万条 (Mathematics) | 10,257 | `.tsv` + `.dict.yaml` | Primary school through undergraduate: arithmetic and numbers, plane and solid geometry, algebraic expressions and equations, functions and trigonometry, sequences and limits, derivatives and integrals, series, linear algebra, probability and statistics, complex analysis and differential equations, real analysis and functional analysis, abstract algebra, topology, number theory, numerical analysis, operations research and graph theory, mathematical logic and set theory |
+| 机械行业专业术语词库_3万条 (Mechanical engineering) | 2026-10-24-01 | 30,314 | Fasteners, keys, gears, bearings, machining (turning, milling, planing, grinding), heat treatment, welding, casting, materials, metrology and inspection |
+| 材料学专业术语词库_1.5万条 (Materials science) | 2026-10-24-01 | 14,976 | Crystal structure and phase transformation, defects and diffusion, mechanical properties and failure, characterisation, metals / ceramics and glass / polymers / composites, batteries and semiconductors, corrosion protection |
+| 数学专业术语词库_1万条 (Mathematics) | 2026-10-24-01 | 10,257 | Primary school through undergraduate: arithmetic and numbers, plane and solid geometry, algebraic expressions and equations, functions and trigonometry, sequences and limits, derivatives and integrals, series, linear algebra, probability and statistics, complex analysis and differential equations, real analysis and functional analysis, abstract algebra, topology, number theory, numerical analysis, operations research and graph theory, mathematical logic and set theory |
 
-Every dictionary ships both files — import either one: `.tsv` is the generic text format, `.dict.yaml` is the Rime format.
+File naming: `<dictionary>_<version>.tsv` and `<dictionary>_<version>.dict.yaml`, for example
+`数学专业术语词库_1万条_2026-10-24-01.tsv`. The version is a date plus a same-day serial, formatted
+`YYYY-MM-DD-NN`: the first release of a dictionary on a given day is `01`, a further update that day becomes
+`02`, and the serial restarts at `01` on the next day.
+Every dictionary ships both files — import either one: `.tsv` is the generic text format, `.dict.yaml` is the
+Rime format, whose header `version` field matches the version listed above.
+The repository keeps only the **latest** version of each dictionary; earlier versions remain retrievable from
+the commit history.
 
 ## 2. Installation
 
@@ -63,10 +70,12 @@ Since **1.0.3**, the skill knows about this case library — the agent checks fo
 which saves guessing the conventions and building a word list from scratch.
 **1.0.4** adds mathematics-specific polyphone rules (奇函数 / 行列式 / 重积分 families plus 着色 zhuo se)
 and makes the polyphone examples in the generated documentation project-configurable.
+Since **1.0.6**, generated files and the Rime header carry a version number (`YYYY-MM-DD-NN`), the statistics
+document states it, and re-running finalize on unchanged content does not create a new version.
 
 ## 5. Contributing
 
-Generate a dictionary with the skill, make sure `validate` passes, then drop `<title>_<size>.tsv` and its
+Generate a dictionary with the skill, make sure `validate` passes, then drop `<title>_<size>_<version>.tsv` and its
 `.dict.yaml` into the repository root, and add a row to both the table above and the changelog below.
 Maintainers commit straight to `master`; outside contributors are welcome to open a pull request.
 Feature requests are welcome as issues.
@@ -75,6 +84,7 @@ Feature requests are welcome as issues.
 
 | Date | Change |
 |---|---|
+| 2026-10-24 | Version numbers added to dictionary file names (date + same-day serial, e.g. `2026-10-24-01`); all three dictionaries published as their first version |
 | 2026-10-24 | Mechanical and materials dictionaries re-voiced to standard readings (874 entries: 弹 tán, 泊松 bó, 着色 zhuó) |
 | 2026-10-24 | Released under the MIT License; `LICENSE` added at the repository root |
 | 2026-10-24 | Added the mathematics dictionary (10,257 entries); skill upgraded to 1.0.4 with mathematics-specific pronunciation rules |
