@@ -64,7 +64,8 @@ and makes the polyphone examples in the generated documentation project-configur
 ## 5. Contributing
 
 Generate a dictionary with the skill, make sure `validate` passes, then drop `<title>_<size>.tsv` and its
-`.dict.yaml` into the repository root, add a row to the table above, and open a pull request.
+`.dict.yaml` into the repository root, and add a row to both the table above and the changelog below.
+Maintainers commit straight to `master`; outside contributors are welcome to open a pull request.
 Feature requests are welcome as issues.
 
 ## 6. Changelog
